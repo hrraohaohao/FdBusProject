@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="connect"
+            android:text="链接" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="find"
+            android:text="发现" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="request"
+            android:text="调用" />
+
+
+    </LinearLayout>
+
+</layout>

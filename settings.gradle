@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "fdbusProject"
 include ':app'
+include ':fdbus'
+include ':clientapp'

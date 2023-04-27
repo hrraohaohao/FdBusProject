@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.hao.fdbus'
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    api 'androidx.core:core-ktx:1.7.0'
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'com.google.android.material:material:1.1.0'
+    api 'com.google.code.gson:gson:2.5'
+    api "org.java-websocket:Java-WebSocket:1.4.0"
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+}
