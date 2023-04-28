@@ -1,2 +1,2 @@
 # FdBusProject
-基于socket，模拟fdbus 框架。 做出一个跨设备交互框架
+基于socket，模拟fdbus。 跨设备交互IPC框架
