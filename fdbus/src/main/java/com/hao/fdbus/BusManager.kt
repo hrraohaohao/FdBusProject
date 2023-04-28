@@ -30,7 +30,7 @@ class BusManager : Service() {
     }
 
     fun start() {
-        mAppWebSocketServer = AppWebSocketServer(8081)
+        mAppWebSocketServer = AppWebSocketServer(9090)
     }
 
 }

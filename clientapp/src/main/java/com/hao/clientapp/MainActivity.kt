@@ -24,8 +24,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun connect(view: View) {
-        Log.i(TAG, "connect: ")
-        ipcManager?.connect("ws://192.168.32.108:", 8081)
+        ipcManager?.connect("ws://192.168.32.112:", 9090)
     }
 
     fun find(view: View) {
